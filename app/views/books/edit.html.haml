@@ -1,0 +1,20 @@
+.book-content
+  .contents.row
+    =form_tag("/books/#{@book.id}", method: :patch) do
+      %a Title
+      %input{name: "title", type:"text",value:"#{@book.title}"}/
+      %a Genre
+      %select{name: "genre",value:""}
+        %option{value: "マンガ"} マンガ
+        %option{value: "小説"} 小説
+        %option{value: "ビジネス"} ビジネス
+        %option{value: "自己啓発"} 自己啓発本
+        %option{value: "その他"} その他
+      / %input{:name => "genre", :type =>"text"}/
+      %a Image
+      %input{name: "image", type: "text", value:"#{@book.image}"}/
+      %a Author
+      %input{name: "author", type:"text", value: "#{@book.author}"}/
+      %a Text
+      %textarea{cols: "30", name: "text", rows: "10"}= "#{@book.text}"
+      %input{type: "submit", value: "SENT"}/

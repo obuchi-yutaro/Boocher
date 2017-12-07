@@ -1,0 +1,22 @@
+h1.grid-6{
+  a{
+    font-family: arial, sans-serif;
+  }
+}
+
+@font-face {
+  font-family: 'Talisman';
+  src: font-url('TalismanFree.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.user_nav.grid-6{
+  .boocher__title{
+    font-family: 'Talisman';
+    color: #c5a05a;
+    font-size: 75px;
+    text-align: center;
+  }
+}

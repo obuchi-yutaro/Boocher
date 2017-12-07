@@ -1,0 +1,20 @@
+.book-content
+  .contents.row
+    =form_tag("/books", method: :post) do
+      %a Title
+      %input{name: "title", type:"text",}/
+      %a Genre
+      %select{name: "genre"}
+        %option{value: "マンガ"} マンガ
+        %option{value: "小説"} 小説
+        %option{value: "ビジネス"} ビジネス
+        %option{value: "自己啓発本"} 自己啓発本
+        %option{value: "その他"} その他
+      / %input{:name => "genre", :type =>"text"}/
+      %a Image
+      %input{name: "image", type: "text"}/
+      %a Author
+      %input{name: "author", type:"text" }/
+      %a Text
+      %textarea{cols: "30", name: "text", rows: "10"}
+      %input{type: "submit", value: "SENT"}/

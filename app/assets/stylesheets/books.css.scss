@@ -1,0 +1,242 @@
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@font-face {
+  font-family: 'APJapanesefont';
+  src: font-url('APJapanesefont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+// インデックス 
+.container{
+	width: 1270px;
+	background-color: white;
+  .contents{
+  	width: 1270px;
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+    
+
+
+    .book-content{
+      width: 800px;
+      height: 650px;
+      background-image: url("https://cdn.pixabay.com/photo/2016/02/19/12/30/book-1210149_1280.jpg");
+      background-repeat:no-repeat;
+      background-size: 850px auto;
+      .single-box{
+        position: relative;
+        left: 428px;
+        top: 105px;
+        height: 370px;
+        width: 270px;
+        background-color: white;
+        background-size:100% 100%;
+    }
+      .status{
+      height: 332px;
+      width:210px;
+      position:relative;
+      left: 163px;
+      bottom: 225px;
+      ul{
+      list-style-type: none;
+        li{
+            font-family: 'APJapanesefont';
+            margin-top: 10px;
+            font-size: 20px;
+            .mypage{
+              position:relative;
+              right:76px;
+              top:25px;
+              text-decoration:none;
+            }
+
+        }
+        a{
+            margin-top: 5px;
+        }
+
+      }
+    }
+
+}
+
+    .link-show{
+        width: 55px;
+        height: 33px;
+        position: relative;
+        right: 261px;
+        top: 212px;
+        font-family: 'APJapanesefont';
+        font-size: 27px;
+        a{
+          text-decoration:none;
+          color: #ff7f50
+        }
+        a:hover { color: #00ffff; }
+      }
+} 
+}
+
+
+// new
+.book-content{
+    width: 1000px;
+    height: 800px;
+    background-image: url("https://cdn.pixabay.com/photo/2016/02/19/12/30/book-1210149_1280.jpg");
+    background-repeat:no-repeat;
+    background-size: 980px auto;
+    margin: auto;
+    .contents.row{
+      position: relative;
+      top: 135px;
+      form{
+         display: flex;
+         justify-content: flex-end;
+         flex-direction: column;
+         align-items: center;
+         position: relative;
+         left: 147px;
+         a{
+          position: relative;
+          right: 295px;
+          top: 24px;
+          font-family: 'APJapanesefont';
+          font-size: 25px;
+
+         }
+        input{
+          // border:none;
+          background-color:transparent;
+          border-radius: 1em;
+          font-size: 20px;
+          border: 1px solid;
+          outline: 0;
+          &:last-child {
+             margin-top: 20px;
+             // font-weight: bold;
+             box-shadow: 2px 2px 3px 1px #666;
+
+
+
+           }
+        }
+
+        select{
+          background-color: transparent;
+          option{
+          }
+        }
+
+        textarea{
+          // border:none;
+          background-color:transparent;
+          border-radius: 1em;
+          border: 1px solid;
+          outline: 0;
+          // background-color:blue;
+        }
+      }
+    }
+
+}
+
+
+
+// book-show
+.content-box{
+  width: 1270px;
+  .middle-box{
+    margin: auto;
+    .show-box{
+    height: 315px;
+    width: 165px;
+    background-repeat:no-repeat;
+    background-size: 165px auto;
+    margin: auto;
+  }
+    .book-box{
+    height: 500px;
+    width:750px;
+    background-image: url("https://cdn.pixabay.com/photo/2016/02/19/12/30/book-1210149_1280.jpg");
+    background-repeat:no-repeat;
+    background-size: 750px auto;
+    margin: auto;
+    position: relative;
+    bottom:100px;
+
+      .status-box{
+        width:185px;
+        height:320px;
+        position:relative;
+        left: 151px;
+        top: 115px;
+        ul{
+          // position:relative;
+          // top: 342px;
+          // left: 12px;
+          li{
+            font-family: 'APJapanesefont';
+            font-size:20px;
+            margin-top:19px;
+           a{
+
+          }
+          }
+            
+          }
+        }
+      .text-box{
+        width:100px;
+        position:relative;
+        left: 472px;
+        bottom: 208px;
+        font-family: 'APJapanesefont';
+        font-size: 20px;
+      }
+
+      p{
+        width: 195px;
+        position:relative;
+        left: 400px;
+        bottom: 210px;
+        font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+      }
+      }
+  }
+  }
+
+
+// 投稿
+
+
+// more-list show画面
+.show-list{
+  height: 24px;
+  width: 180px;
+  position: relative;
+  left: 647px;
+  bottom: 213px;
+  ul{
+    display: flex;
+    list-style: none;
+    li{
+      display: inline-block;
+      a{
+        display: flex;
+        width:88px;
+        background-color:transparent;
+        text-decoration:none;
+        font-family: 'APJapanesefont';
+        font-size: 20px;
+      }
+      a:hover { color: #32cd32; }
+
+    }
+  }
+}
+

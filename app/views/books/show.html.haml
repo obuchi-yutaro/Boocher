@@ -1,0 +1,27 @@
+.content-box
+  .middle-box
+    .show-box{ :style => "background-image: url(#{@book.image})" }
+    .book-box
+      .status-box
+        %ul
+          %li Title
+          %a #{@book.title} 
+          %li  Genre
+          %a #{@book.genre}
+          %li  Author
+          %a #{@book.author}
+          %li Reviewer
+          %a #{@book.user.nickname}
+          / %li Text
+          / %a #{@book.text}
+      .text-box Text
+      %p.word #{@book.text} 
+
+
+.show-list
+  %ul
+    - if user_signed_in? && current_user.id == @book.user_id
+      %li
+        = link_to 'Edit', "/books/#{@book.id}/edit", method: :get
+      %li
+        = link_to 'Delete', "/books/#{@book.id}", method: :delete
