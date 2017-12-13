@@ -88,3 +88,59 @@
     }
 }
 }
+
+.edit-date {
+  background-color: #3f3f3f;
+  height:900px;
+
+  .edit-detail{
+    height: 900px;
+    background-image: url("https://cdn.pixabay.com/photo/2016/07/20/21/01/amsterdam-1531287_1280.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    filter: blur(2px);
+  }
+
+  .edit-profile{
+    position: relative;
+    left: 466px;
+    bottom: 854px;
+    width: 400px;
+    height:706px;
+
+    form{
+
+      .field{
+        height:80px;
+        width:428px;
+        em{
+          color:white;
+        }
+
+        label{
+          color: white;
+
+        }
+
+        select{
+          width:330px;
+          height:35px;
+        }
+
+        input{
+          width:330px;
+          height:35px;
+        }
+      }
+
+      .actions{
+        margin-top:30px;
+      }
+    }
+  }
+}
+
+
