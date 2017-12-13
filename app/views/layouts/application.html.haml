@@ -11,9 +11,9 @@
     .header__bar.row
       %h3.grid-6
         %a{:href => "/"} Boocher
+        %p.boocher__title Boocher
       - if user_signed_in?
         .user_nav.grid-6
-          %p.boocher__title Boocher
           %ul.user__info
             %li
               %a{:href => "/users/#{current_user.id}"} マイページ

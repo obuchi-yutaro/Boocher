@@ -1,4 +1,4 @@
-.book-content
+.book-contents
   .contents.row
     =form_tag("/books", method: :post) do
       %a Title
@@ -16,5 +16,5 @@
       %a Author
       %input{name: "author", type:"text" }/
       %a Text
-      %textarea{cols: "30", name: "text", rows: "10"}
+      %textarea{cols: "20", name: "text", rows: "5"}
       %input{type: "submit", value: "SENT"}/

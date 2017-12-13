@@ -1,6 +1,6 @@
 class BooksController < ApplicationController
 
-	before_action :move_to_index, except: :index
+	before_action :authenticate_user!, except: [:show, :index]
 
 	def index
 		@books = Book.includes(:user).order('id DESC').limit(8)
