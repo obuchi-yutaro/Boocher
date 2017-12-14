@@ -15,5 +15,8 @@ class User < ActiveRecord::Base
   validates :nickname, presence: true
   validates :occupation, presence: true
 
-  
+  has_many : reviews_of_from_user, :class_name => 'Review', :foreign_key => 'from_user_id', :dependent => :destroy
+  has_many : reviews_of_to_user, :class_name => 'Review' , :foreign_key => 'to_user_id' , :dependent => :destroy
+  has_many : reviews_of_from_user, :through => :reviews_of_from_user, :source => 'to_user'
+  has_many : reviews_of_to_user, :through => :reviews_of_to_user, :source => 'from_user'
 end
