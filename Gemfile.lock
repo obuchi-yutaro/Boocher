@@ -66,6 +66,8 @@ GEM
       railties (>= 4.1.0, < 5.2)
       responders
       warden (~> 1.2.3)
+    enum_help (0.0.17)
+      activesupport (>= 3.0.0)
     erb2haml (0.1.5)
       html2haml
     erubis (2.7.0)
@@ -199,6 +201,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   compass-rails (~> 2.0)
   devise
+  enum_help
   erb2haml
   haml-rails
   jbuilder (~> 2.0)

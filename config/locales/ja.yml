@@ -1,0 +1,24 @@
+ja:
+  enums:
+    user:
+      gender:
+        man: 男性
+        woman: 女性
+        no_selection: 選択なし
+
+ja:
+  enums:
+    user:
+      gender:
+        infant: １０歳以下
+        teens: １０代
+        twenties: ２０代
+        thirties: ３０代
+        forties: ４０代
+        fifties: ５０代
+        sixties: ６０代
+        seventies: ７０代
+        eighties: ８０代
+        nineties: ９０代
+        over_hundred: １００歳以上
+

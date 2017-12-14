@@ -13,20 +13,40 @@
 .container{
 	width: 1270px;
 	background-color: white;
+  
   .contents{
   	width: 1270px;
   	display: flex;
   	flex-wrap: wrap;
   	justify-content: center;
-    
+
+    .wrapper{
+      height:800px;
+      width:1270px;
+      background-image: url("https://cdn.pixabay.com/photo/2016/07/20/21/01/amsterdam-1531287_1280.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      
+      &:before {
+        content: "";
+        -webkit-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+      }
+
 
 
     .book-content{
-      width: 800px;
-      height: 650px;
-      background-image: url("https://cdn.pixabay.com/photo/2016/02/19/12/30/book-1210149_1280.jpg");
-      background-repeat:no-repeat;
-      background-size: 850px auto;
+        width: 801px;
+        height: 587px;
+        background-image: url(book-1210149_1280.png);
+        background-repeat: no-repeat;
+        background-size: 850px auto;
+        position: relative;
+        left: 190px;
+
       .single-box{
         position: relative;
         left: 428px;
@@ -35,26 +55,25 @@
         width: 270px;
         background-color: white;
         background-size:100% 100%;
-    }
+      }
       .status{
-      height: 332px;
+      height: 328px;
       width:210px;
       position:relative;
-      left: 163px;
+      left: 205px;
       bottom: 225px;
-      ul{
-      list-style-type: none;
-        li{
+        ul{
+          list-style-type: none;
+          li{
             font-family: 'APJapanesefont';
             margin-top: 10px;
             font-size: 20px;
             .mypage{
-              position:relative;
-              right:76px;
-              top:25px;
-              text-decoration:none;
-            }
-
+            position:relative;
+            right:76px;
+            top:25px;
+            text-decoration:none;
+          }
         }
         a{
             margin-top: 5px;
@@ -62,7 +81,7 @@
 
       }
     }
-
+  }
 }
 
     .link-show{
@@ -84,7 +103,7 @@
 
 
 // new
-.book-content{
+.book-contents{
     width: 1000px;
     height: 800px;
     background-image: url("https://cdn.pixabay.com/photo/2016/02/19/12/30/book-1210149_1280.jpg");
@@ -93,18 +112,22 @@
     margin: auto;
     .contents.row{
       position: relative;
-      top: 135px;
+      left: 148px;
+      top: 96px;
+      width: 679px;
+      height: 473px;
       form{
-         display: flex;
-         justify-content: flex-end;
-         flex-direction: column;
-         align-items: center;
-         position: relative;
-         left: 147px;
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          left: 157px;
+          top: 35px;
          a{
           position: relative;
           right: 295px;
-          top: 24px;
+          top: 20px;
           font-family: 'APJapanesefont';
           font-size: 25px;
 
@@ -116,9 +139,10 @@
           font-size: 20px;
           border: 1px solid;
           outline: 0;
+          position:relative;
+          bottom: 17px;
           &:last-child {
              margin-top: 20px;
-             // font-weight: bold;
              box-shadow: 2px 2px 3px 1px #666;
 
 
@@ -128,6 +152,8 @@
 
         select{
           background-color: transparent;
+          position:relative;
+          bottom:10px;
           option{
           }
         }
@@ -150,39 +176,48 @@
 // book-show
 .content-box{
   width: 1270px;
+
   .middle-box{
-    margin: auto;
+      margin: auto;
+      background-image: url("https://cdn.pixabay.com/photo/2016/07/20/21/01/amsterdam-1531287_1280.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      height:895px;
     .show-box{
-    height: 315px;
-    width: 165px;
-    background-repeat:no-repeat;
-    background-size: 165px auto;
-    margin: auto;
+        height: 237px;
+        width: 165px;
+        background-repeat: no-repeat;
+        background-size: 165px auto;
+        margin: auto;
+        position: relative;
+        top: 30px;
+        border: double 5px white;
   }
     .book-box{
     height: 500px;
     width:750px;
-    background-image: url("https://cdn.pixabay.com/photo/2016/02/19/12/30/book-1210149_1280.jpg");
+    background-image: url("book-1210149_1280.png");
     background-repeat:no-repeat;
     background-size: 750px auto;
     margin: auto;
     position: relative;
-    bottom:100px;
+    bottom:10px;
 
       .status-box{
-        width:185px;
+        width:190px;
         height:320px;
         position:relative;
-        left: 151px;
+        left: 174px;
         top: 115px;
         ul{
-          // position:relative;
-          // top: 342px;
-          // left: 12px;
+          
           li{
             font-family: 'APJapanesefont';
             font-size:20px;
             margin-top:19px;
+            margin-bottom: 3px;
            a{
 
           }
@@ -203,7 +238,7 @@
         width: 195px;
         position:relative;
         left: 400px;
-        bottom: 210px;
+        bottom: 204px;
         font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
       }
       }
@@ -219,8 +254,8 @@
   height: 24px;
   width: 180px;
   position: relative;
-  left: 647px;
-  bottom: 213px;
+  left: 685px;
+  bottom: 263px;
   ul{
     display: flex;
     list-style: none;

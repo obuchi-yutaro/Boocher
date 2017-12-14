@@ -1,8 +1,4 @@
-h1.grid-6{
-  a{
-    font-family: arial, sans-serif;
-  }
-}
+
 
 @font-face {
   font-family: 'Talisman';
@@ -12,11 +8,39 @@ h1.grid-6{
 }
 
 
-.user_nav.grid-6{
-  .boocher__title{
+
+
+
+.header__bar.row{
+  height:300px;
+  .grid-6{
+  height:241px;
+  
+  p{
     font-family: 'Talisman';
     color: #c5a05a;
     font-size: 75px;
     text-align: center;
+    position: relative;
+    top:55px;
   }
+}
+}
+.grid-6{
+  height:241px;
+  
+  p{
+    font-family: 'Talisman';
+    color: #c5a05a;
+    font-size: 75px;
+    text-align: center;
+    position: relative;
+    top:55px;
+  }
+}
+
+.single_a{
+  position:relative;
+  top:22px;
+  right: 76px;
 }
