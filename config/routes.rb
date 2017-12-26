@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :books do
+
     collection do
       get 'search'
+      get "result"
     end
   end
 

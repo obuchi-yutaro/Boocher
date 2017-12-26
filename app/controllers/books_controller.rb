@@ -39,7 +39,13 @@ class BooksController < ApplicationController
 	end
 
 	def search
+    @book_foom = BookForm.new
 	end
+
+  def result
+    book_form = BookForm.new(search_book_parmas)
+    @result = book_form.search
+  end
 
 	private
 
