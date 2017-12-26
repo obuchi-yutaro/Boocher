@@ -88,13 +88,13 @@
         width: 55px;
         height: 33px;
         position: relative;
-        right: 261px;
-        top: 212px;
+        left: 745px;
+        bottom: 496px;
         font-family: 'APJapanesefont';
         font-size: 27px;
         a{
           text-decoration:none;
-          color: #ff7f50
+          color: white
         }
         a:hover { color: #00ffff; }
       }
@@ -255,7 +255,7 @@
   width: 180px;
   position: relative;
   left: 685px;
-  bottom: 263px;
+  bottom: 243px;
   ul{
     display: flex;
     list-style: none;
@@ -271,6 +271,27 @@
       }
       a:hover { color: #32cd32; }
 
+    }
+  }
+}
+
+.review-list{
+  position:relative;
+  left: 890px;
+  bottom: 495px;
+  width: 208px;
+  ul{
+
+    li{
+
+      a{
+        background-color:white;
+        background-color:transparent;
+        font-family: 'APJapanesefont';
+        font-size: 20px;
+        text-decoration:none;
+        color:white
+      }
     }
   }
 }

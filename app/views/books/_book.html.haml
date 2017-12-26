@@ -15,6 +15,5 @@
             = link_to "#{book.user.nickname}", user_path(book.id), method: :get, class:"mypage"
           - else
             %a.single_a #{book.user.nickname}
-
-/ .link-show
-/   = link_to "詳細", book_path(book.id), method: :get
+    .link-show
+      = link_to "詳細", book_path(book.id), method: :get

@@ -25,3 +25,10 @@
         = link_to 'Edit', "/books/#{@book.id}/edit", method: :get
       %li
         = link_to 'Delete', "/books/#{@book.id}", method: :delete
+
+.review-list
+  %ul
+    %li
+      = link_to 'このユーザのレビューを見る', user_reviews_path(@book.user_id) 
+    %li
+      = link_to 'このユーザのレビューを書く', new_user_review_path(@book.user_id)

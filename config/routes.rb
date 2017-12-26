@@ -6,7 +6,12 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :users, only: [:show]
+  resources :users, only: :show do
+    # binding.pry
+    resources :reviews, only: [:new, :create, :show, :index]
+  end
+
+
   root 'books#index'
 end
   	
