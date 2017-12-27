@@ -39,7 +39,8 @@ class BooksController < ApplicationController
 	end
 
 	def search
-    @book_foom = BookForm.new
+    # binding.pry
+    @book_form = Form::BookForm.new
 	end
 
   def result

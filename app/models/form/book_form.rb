@@ -1,15 +1,15 @@
-class BookForm
+class Form::BookForm
   include ActiveModel::Model
 
-  attr_accessor :author, :published_date, :review_rate
+  attr_accessor :gender, :ages, :occupation, :genre
 
-  def initialize(params)
-    @author = params[:author]
+  def initialize(params={})
+    @gender = params[:gender]
     @published_rate = params[:published_date]
   end
 
   def search
-    Book.joins(:reviews).where("books.author = ? and books.published_date >= ? and reviews_rate = ?", @author, @published_date, @review_rate)
+    Book.joins(:users).where("books.author = ? and books.published_date >= ? and users.nickname = ?", @gender, @published_date, @review_rate)
   end
 end
 
