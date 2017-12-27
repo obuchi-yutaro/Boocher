@@ -44,8 +44,9 @@ class BooksController < ApplicationController
 	end
 
   def result
-    book_form = BookForm.new(search_book_parmas)
+    book_form = Form::BookForm.new(search_book_params)
     @result = book_form.search
+    # binding.pry
   end
 
 	private
@@ -57,5 +58,10 @@ class BooksController < ApplicationController
 	def move_to_index
 		redirect_to action: :index unless user_signed_in?
 	end
+
+  def search_book_params
+    params.require(:form_book_form).permit(:gender, :ages, :occupation, :genre)
+  end
+
 
 end

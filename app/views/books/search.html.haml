@@ -1,3 +1,17 @@
 .user-review
-  = form_for @book_form, url: "search_path" do |f|
-    = f.text_field :gender
+  .review-content
+    = form_for(@book_form, url: result_books_path, method: :get) do |f|
+      .field
+        = f.label :性別
+        = f.text_field :gender
+      .field
+        = f.label :年齢
+        = f.text_field :ages
+      .field
+        = f.label :職業
+        = f.text_field :occupation
+      .field
+        = f.label :ジャンル
+        = f.text_field :genre
+      .actions
+        = button_tag 

@@ -5,12 +5,17 @@ class Form::BookForm
 
   def initialize(params={})
     @gender = params[:gender]
-    @published_rate = params[:published_date]
+    @ages = params[:ages]
+    @occupation = params[:occupation]
+    @genre = params[:genre]
   end
 
   def search
-    Book.joins(:users).where("books.author = ? and books.published_date >= ? and users.nickname = ?", @gender, @published_date, @review_rate)
-  end
+    # Book.joins(:user).where("users.gender = ? and users.ages = ? and users.occupation = ? and books.genre = ?" , @gender, @ages, @occupation, @genre)
+    # Book.joins(:user).where("users.gender = ?", @gender)
+    # Book.joins(:user).where("users.ages = ?", @ages.to_i)
+    Book.joins(:user).where("users.occupation = ?", @occupation)
+  end 
 end
 
 
