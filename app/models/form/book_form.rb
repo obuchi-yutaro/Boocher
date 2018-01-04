@@ -11,10 +11,11 @@ class Form::BookForm
   end
 
   def search
-    # Book.joins(:user).where("users.gender = ? and users.ages = ? and users.occupation = ? and books.genre = ?" , @gender, @ages, @occupation, @genre)
+    Book.joins(:user).where("users.gender = ? or users.ages = ? or users.occupation = ? or books.genre = ?" , @gender, @ages, @occupation, @genre)
+    # Book.joins(:user).where("users.gender = ? and users.ages = ? and users.occupation = ?" , @gender, @ages, @occupation)
     # Book.joins(:user).where("users.gender = ?", @gender)
     # Book.joins(:user).where("users.ages = ?", @ages.to_i)
-    Book.joins(:user).where("users.occupation = ?", @occupation)
+    # Book.joins(:user).where("users.occupation = ?", @occupation)
   end 
 end
 
@@ -22,4 +23,3 @@ end
 # = form_for @book_form, url: "search_path" do |f|
 #   = f.text_field :author
 #   = f.text_field :pulished_date
-#   
