@@ -1,4 +1,6 @@
 .reviews-index
   .reviews-box
-    - @reviews.each do |review|
-      %p.word #{review.text} 
+    .sample
+      - @reviews.each do |review|
+        .reviews-contents
+          #{review.text}

@@ -7,14 +7,29 @@
 .reviews-index {
   width: 1270px;
   .reviews-box{
-    height:800px;
-      width:1270px;
-      // // background-image: url("https://cdn.pixabay.com/photo/2017/04/19/13/07/coffee-2242231_1280.jpg");
-      // // background-position: center center;
-      // // background-repeat: no-repeat;
-      // // background-attachment: fixed;
-      // // background-size: cover;
-      // // background-color: #464646;
-      // filter: blur(2px);
+    height:1000px;
+    width:1270px;
+    background-image: url("https://cdn.pixabay.com/photo/2016/07/20/21/01/amsterdam-1531287_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .sample{
+      padding-top: 1px;
+      .reviews-contents{
+        background-color: white;
+        height:150px;
+        width:350px;
+        margin: auto;
+        margin-top: 75px;
+        border-style: groove;
+        border-style:solid;
+        border-color: #7fffff;
+        border-radius: 2em; 
+      }
+    }   
   }
 }
