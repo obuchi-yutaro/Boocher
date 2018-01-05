@@ -19,6 +19,7 @@
               %a{:href => "/users/#{current_user.id}"} マイページ
               = link_to "ログアウト", destroy_user_session_path, method: :delete
           %a.post{:href => "/books/new"} 投稿する
+          %a.post{:href => "/books/search"}検索する
       - else
         .content-grid-6
           = link_to "ログイン", new_user_session_path, :class => 'post'
