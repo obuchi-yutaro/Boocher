@@ -1,3 +1,20 @@
 // Place all the styles related to the reviews controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// index view
+.reviews-index {
+  width: 1270px;
+  .reviews-box{
+    height:800px;
+      width:1270px;
+      // // background-image: url("https://cdn.pixabay.com/photo/2017/04/19/13/07/coffee-2242231_1280.jpg");
+      // // background-position: center center;
+      // // background-repeat: no-repeat;
+      // // background-attachment: fixed;
+      // // background-size: cover;
+      // // background-color: #464646;
+      // filter: blur(2px);
+  }
+}
