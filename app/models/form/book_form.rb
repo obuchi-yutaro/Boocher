@@ -11,10 +11,19 @@ class Form::BookForm
   end
 
   def search
-    Book.joins(:user).where("users.gender = ? or users.ages = ? or users.occupation = ? or books.genre = ?" , @gender, @ages, @occupation, @genre)
+    # Book.joins(:user).where(
+    #   "users.gender = ? or users.ages = ? or users.occupation = ? or books.genre = ?", 
+    #   @gender, @ages, @occupation, @genre)
     # Book.joins(:user).where("users.gender = ? and users.ages = ? and users.occupation = ?" , @gender, @ages, @occupation)
-    # Book.joins(:user).where("users.gender = ?", @gender)
-    # Book.joins(:user).where("users.ages = ?", @ages.to_i)
+    query = Book.joins(:user)
+    query = query.where("users.gender = ?", @gender) if @gender.present?
+    query = query.where("users.ages = ?", @ages) if @ages.present?
+    query = query.where("users.occupations = ?", @occupation) if @occupations.present?
+    query = query.where("books.genre = ?", @genre) if @genre.present?
+
+    books.each do |book|
+      book.user.name
+    end
     # Book.joins(:user).where("users.occupation = ?", @occupation)
   end 
 end
