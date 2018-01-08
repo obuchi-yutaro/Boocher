@@ -52,3 +52,4 @@ end
   gem 'erb2haml'
   gem 'devise'
   gem 'enum_help'
+  gem 'kaminari'

@@ -1,1 +1,21 @@
-.user-review
+.result{
+  .result-content{
+    height:3000px;
+    width:1270px;
+    background-image: url("https://cdn.pixabay.com/photo/2016/07/20/21/01/amsterdam-1531287_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .result-book{
+        width: 801px;
+        height: 587px;
+        background-image: url(book-1210149_1280.png);
+        background-repeat: no-repeat;
+        background-size: 850px auto;
+        position: relative;
+        left: 190px;
+    }
+  }
+}

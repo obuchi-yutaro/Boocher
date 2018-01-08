@@ -1,6 +1,6 @@
 .result
   .result-content
-    - @results.each do |result|
-      .books-result
-        #{result.genre}
-        #{result.title}
+    - if @results.exists?
+      - @results.each do |result|
+        .result-book
+          #{result.text}
