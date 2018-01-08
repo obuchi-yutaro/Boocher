@@ -1,6 +1,23 @@
 .result
   .result-content
-    - if @results.exists?
-      - @results.each do |result|
+    - if @books.exists?
+      - @books.each do |book|
         .result-book
-          #{result.text}
+          .result-image{ :style => "background-image: url(#{book.image})" } 
+          .result-detail
+            %ul
+              %li Title
+              %a #{book.title} 
+              %li  Genre
+              %a #{book.genre}
+              %li  Author
+              %a #{book.author}
+              %li
+                Reviewer
+                - if user_signed_in?
+                  = link_to "#{book.user.nickname}", user_path(book.id), method: :get, class:"mypage"
+                - else
+                  %a.single_a #{book.user.nickname}
+          .link-show
+            = link_to "詳細", book_path(book.id), method: :get
+      = paginate(@books)

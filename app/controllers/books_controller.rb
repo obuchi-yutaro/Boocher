@@ -44,7 +44,7 @@ class BooksController < ApplicationController
 
   def result
     book_form = Form::BookForm.new(search_book_params)
-    @results = book_form.search.page(params[:page]).per(5)
+    @books = book_form.search.page(params[:page]).per(5)
     # binding.pry
   end
 
