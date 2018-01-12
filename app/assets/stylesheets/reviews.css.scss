@@ -33,3 +33,37 @@
     }   
   }
 }
+
+// new view
+.post-content{
+  width: 801px;
+  height: 587px;
+  background-image: url(book-1210149_1280.png);
+  background-repeat: no-repeat;
+  background-size: 850px auto;
+  position: relative;
+  left: 190px;
+  form{
+    width: 222px;
+    height: 274px;
+    position: relative;
+    left: 455px;
+    top: 151px;
+   .evaluation{
+
+    #review_rate{
+      background-color:transparent;
+      border-style: ridge;
+      border-color: white;
+    }
+
+  .review-post{
+    #review_text{
+      background-color:transparent;
+      border-style: ridge;
+      border-color: white;
+    }
+   }
+  }
+}
+}
