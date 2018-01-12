@@ -2,16 +2,21 @@
   .review-content
     = form_for(@book_form, url: result_books_path, method: :get) do |f|
       .field
-        = f.label :性別
-        = f.text_field :gender
+        = f.label :gender
+        %br/
+        = f.select :gender, [["",""], ["男性", "0"], ["女性", "1"], ["選択なし", "2"]]
       .field
-        = f.label :年齢
-        = f.text_field :ages
+        = f.label :ages
+        %br/
+        = f.select :ages, [["", ""],["10歳以下", "0"], ["10代", "10"], ["20代", "20"], ["30代", "30"], ["40代", "40"], ["50代", "50"], ["60代", "60"], ["70代", "70"], ["80代", "80"], ["90代", "90"], ["100歳以上", "100"]]
       .field
-        = f.label :職業
-        = f.text_field :occupation
+        = f.label :occupation
+        %br/
+        = f.select :occupation, [["", ""],["ビジネスパーソン", "ビジネスパーソン"], ["専門職", "専門職"], ["経営者", "経営者"], ["研究職", "研究職"], ["定年退職者", "定年退職者"], ["学生", "学生"], ["アーティスト", "アーティスト"], ["フリーター", "フリーター"], ["その他", "その他"]]
+      
       .field
-        = f.label :ジャンル
-        = f.text_field :genre
+        = f.label :genre
+        %br/
+        = f.select :genre, [["",""],["漫画", "漫画"], ["小説", "小説"] , ["ビジネス", "ビジネス"], ["自己啓発", "自己啓発"], ["その他", "その他"]]
       .actions
         = button_tag 

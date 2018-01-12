@@ -1,3 +1,4 @@
+// result.html.erb
 .result{
   .result-content{
     // height:3000px;
@@ -122,8 +123,26 @@
                 text-decoration:none;
               }
             }
-          }
+          } 
         }
     }
+  }
+}
+
+
+// search.html.erb
+.user-review{
+  width: 1000px;
+  height: 750px;
+  background-image: url("https://cdn.pixabay.com/photo/2017/07/02/21/34/notebook-2465914_1280.jpg");
+  background-repeat:no-repeat;
+  background-size: 980px auto;
+  margin: auto;
+
+  .review-content{
+    width:153px;
+    position:relative;
+    left: 450px;
+    top: 100px;
   }
 }

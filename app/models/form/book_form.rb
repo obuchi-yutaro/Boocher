@@ -3,6 +3,8 @@ class Form::BookForm
 
   attr_accessor :gender, :ages, :occupation, :genre
 
+
+
   def initialize(params={})
     @gender = params[:gender]
     @ages = params[:ages]
