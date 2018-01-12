@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'APJapanesefont';
+  src: font-url('APJapanesefont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 // result.html.erb
 .result{
   .result-content{
@@ -143,6 +151,31 @@
     width:153px;
     position:relative;
     left: 450px;
-    top: 100px;
+    top: 150px;
+
+    form{
+
+      .field{
+        margin-top: 8px;
+        label{
+          font-family: 'APJapanesefont';
+          font-size: 20px;
+        }
+        select{
+          background-color:transparent;
+        }
+      }
+      .actions{
+        margin-top: 25px;
+        position: relative;
+        left: 30px;
+        button{
+          font-size:15px;
+          background-color:transparent;
+          border-style: groove;
+
+        }
+      }
+    }
   }
 }
