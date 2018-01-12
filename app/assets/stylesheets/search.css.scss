@@ -1,1 +1,181 @@
-.user-review
+@font-face {
+  font-family: 'APJapanesefont';
+  src: font-url('APJapanesefont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+// result.html.erb
+.result{
+  .result-content{
+    // height:3000px;
+    width:1270px;
+    background-image: url("https://cdn.pixabay.com/photo/2016/07/20/21/01/amsterdam-1531287_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .pagination{
+      // position:relative;
+      // left:484px;
+      .page.current{
+        color:yellow;
+        font-size:30px;
+        font-family: 'APJapanesefont';
+      }
+      .page{
+        font-size:30px;
+        font-family: 'APJapanesefont';
+        a{
+          color: white;
+          text-decoration:none;
+        }
+      }
+      .next{
+        font-size:30px;
+        font-family: 'APJapanesefont';
+        a{
+          color: white;
+          text-decoration:none;
+        }
+      }
+      .last{
+        font-size:30px;
+        font-family: 'APJapanesefont';
+        a{
+          color: white;
+          text-decoration:none;
+        }
+      }
+      .first{
+        font-size:30px;
+        font-family: 'APJapanesefont';
+        a{
+          color: white;
+          text-decoration:none;
+        }
+      }
+      .prev{
+        font-size:30px;
+        font-family: 'APJapanesefont';
+        a{
+          color: white;
+          text-decoration:none;
+        }
+      }
+      a:hover { color: #00ffff; }
+    }
+
+    .result-book{
+        width: 800px;
+        height: 587px;
+        background-image: url(book-1210149_1280.png);
+        background-repeat: no-repeat;
+        background-size: 850px auto;
+        position: relative;
+        left: 190px;
+        .result-image{
+          position: relative;
+          left: 428px;
+          top: 105px;
+          height: 370px;
+          width: 270px;
+          background-color: white;
+          background-size:100% 100%;
+        }
+
+        .link-show{
+          width: 55px;
+          height: 33px;
+          position: relative;
+          left: 745px;
+          bottom: 582px;
+          font-family: 'APJapanesefont';
+          font-size: 27px;
+          a{
+            text-decoration:none;
+            color: white
+          }
+          a:hover { color: #00ffff; }
+          }
+
+        .result-detail{
+          height: 409px;
+          width: 283px;
+          position: relative;
+          left: 133px;
+          bottom:293px;
+          ul{
+            list-style-type: none;
+
+            a{
+              position: relative;
+              left: 97px;
+              top: 52px;
+              margin-top:5px;
+            }
+
+            li{
+              font-family: 'APJapanesefont';
+              margin-top: 16px;
+              font-size: 20px;
+              position:relative;
+              top: 50px;
+              left: 100px;
+              .mypage{
+                position:relative;
+                left: -79px;
+                top:27px;
+                text-decoration:none;
+              }
+            }
+          } 
+        }
+    }
+  }
+}
+
+
+// search.html.erb
+.user-review{
+  width: 1000px;
+  height: 750px;
+  background-image: url("https://cdn.pixabay.com/photo/2017/07/02/21/34/notebook-2465914_1280.jpg");
+  background-repeat:no-repeat;
+  background-size: 980px auto;
+  margin: auto;
+
+  .review-content{
+    width:153px;
+    position:relative;
+    left: 450px;
+    top: 150px;
+
+    form{
+
+      .field{
+        margin-top: 8px;
+        label{
+          font-family: 'APJapanesefont';
+          font-size: 20px;
+        }
+        select{
+          background-color:transparent;
+        }
+      }
+      .actions{
+        margin-top: 25px;
+        position: relative;
+        left: 30px;
+        button{
+          font-size:15px;
+          background-color:transparent;
+          border-style: groove;
+
+        }
+      }
+    }
+  }
+}
