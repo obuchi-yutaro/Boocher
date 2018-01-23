@@ -20,7 +20,7 @@ class Form::BookForm
     query = Book.joins(:user)
     query = query.where("users.gender = ?", @gender) if @gender.present?
     query = query.where("users.ages = ?", @ages) if @ages.present?
-    query = query.where("users.occupations = ?", @occupation) if @occupations.present?
+    query = query.where("users.occupation = ?", @occupation) if @occupation.present?
     query = query.where("books.genre = ?", @genre) if @genre.present?
     return query
 
