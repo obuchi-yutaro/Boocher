@@ -11,18 +11,18 @@
 }
 // インデックス 
 .container{
-	width: 1270px;
+	width: 100%;
 	background-color: white;
   
   .contents{
-  	width: 1270px;
+  	width: 100%;
   	display: flex;
   	flex-wrap: wrap;
   	justify-content: center;
 
     .wrapper{
       height:800px;
-      width:1270px;
+      width:100%;
       background-image: url("amsterdam-1531287_1280.jpg");
       background-position: center;
       background-repeat: no-repeat;
@@ -45,7 +45,7 @@
         background-repeat: no-repeat;
         background-size: 850px auto;
         position: relative;
-        left: 190px;
+        left: 255px;
 
       .single-box{
         position: relative;
@@ -106,7 +106,7 @@
 .book-contents{
     width: 1000px;
     height: 800px;
-    background-image: url("https://cdn.pixabay.com/photo/2016/02/19/12/30/book-1210149_1280.jpg");
+    background-image: url("book-1210149_1280.png");
     background-repeat:no-repeat;
     background-size: 980px auto;
     margin: auto;
@@ -175,7 +175,7 @@
 
 // book-show
 .content-box{
-  width: 1270px;
+  width: 100%;
 
   .middle-box{
       margin: auto;
@@ -185,6 +185,7 @@
       background-attachment: fixed;
       background-size: cover;
       height:895px;
+      width:100%;
     .show-box{
         height: 237px;
         width: 165px;
@@ -268,6 +269,8 @@
         text-decoration:none;
         font-family: 'APJapanesefont';
         font-size: 20px;
+        position:relative;
+        left:78px;
       }
       a:hover { color: #32cd32; }
 
@@ -285,6 +288,8 @@
     li{
 
       a{
+        position:relative;
+        left:100px;
         background-color:white;
         background-color:transparent;
         font-family: 'APJapanesefont';
